@@ -83,21 +83,6 @@ img {
   margin-bottom: 72px;
 }
 
-/* #endregion */
-
-/* #region Header */
-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -106,8 +91,28 @@ header > .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
 
+/* #endregion */
+
+/* #region Header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
   margin-right: 76px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .dark {
@@ -126,7 +131,10 @@ header > .container {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+}
 
+.nav-link {
   padding: 24px 0;
 }
 
@@ -164,7 +172,7 @@ header > .container {
   line-height: 1.07;
   text-align: center;
 
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -182,6 +190,10 @@ header > .container {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  min-width: 169px;
+  height: 56px;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -198,7 +210,17 @@ header > .container {
 }
 
 .advantages-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-list {
@@ -224,21 +246,24 @@ header > .container {
   gap: 24px;
 }
 
-.team-item {
+.team-card {
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-card-text {
+  padding: 32px 0;
+}
+
 .team-img {
-  margin-bottom: 32px;
 }
 
 .team-subtitle {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -286,12 +311,16 @@ header > .container {
   padding: 100px 0;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .light {
   color: #f4f4fd;
 }
 
 .footer-text {
-  margin-top: 16px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;

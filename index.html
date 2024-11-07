@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Effective Solutions for Your Business" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,21 +21,21 @@
     <title>Effective Solutions for Your Business</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="nav">
-          <a class="logo" href="./index.html">
+          <a class="header-logo logo" href="./index.html">
             Web<span class="dark">Studio</span>
           </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html">Studio</a>
+              <a class="nav-link" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
-              <a href="">Portfolio</a>
+              <a class="nav-link" href="">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="">Contacts</a>
+              <a class="nav-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -104,7 +100,7 @@
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li class="team-card">
               <img
                 class="team-img"
                 src="./images/team-1.jpg"
@@ -112,10 +108,12 @@
                 width="264"
                 alt="Mark Guerrero"
               />
-              <h3 class="team-subtitle">Mark Guerrero</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="team-card-text">
+                <h3 class="team-subtitle">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 class="team-img"
                 src="./images/team-2.jpg"
@@ -123,10 +121,12 @@
                 width="264"
                 alt="Tom Ford"
               />
-              <h3 class="team-subtitle">Tom Ford</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-card-text">
+                <h3 class="team-subtitle">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 class="team-img"
                 src="./images/team-3.jpg"
@@ -134,10 +134,12 @@
                 width="264"
                 alt="Camila Garcia"
               />
-              <h3 class="team-subtitle">Camila Garcia</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-card-text">
+                <h3 class="team-subtitle">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 class="team-img"
                 src="./images/team-4.jpg"
@@ -145,8 +147,10 @@
                 width="264"
                 alt="Daniel Wilson"
               />
-              <h3 class="team-subtitle">Daniel Wilson</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="team-card-text">
+                <h3 class="team-subtitle">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -235,7 +239,7 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html"
+        <a class="footer-logo logo" href="./index.html"
           >Web<span class="light">Studio</span></a
         >
         <p class="footer-text">
